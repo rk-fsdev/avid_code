@@ -17,34 +17,6 @@ const getRequest = async <T, K = any>(
   return response.data;
 };
 
-const postRequest = async <T, K = any>(
-  url: string,
-  payload: T,
-  params: K = null as any
-) => {
-  const response = await axiosInstance.post(url, payload, params);
-  return response.data;
-};
-
-const patchRequest = async <T, K = any>(
-  url: string,
-  payload: T,
-  params: K = null as any
-) => {
-  const response = await axiosInstance.patch(url, payload, { params });
-  return response.data;
-};
-
-const deleteRequest = async (url: string) => {
-  const response = await axiosInstance.delete(url);
-  return response.data;
-};
-
-const putRequest = async <T>(url: string, payload: T) => {
-  const response = await axiosInstance.put(url, payload);
-  return response.data;
-};
-
 // USERS API
 
 export const listUsers = async () => await getRequest<IUser[]>(`/users`);

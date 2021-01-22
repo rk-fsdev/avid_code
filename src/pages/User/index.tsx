@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Box, Button, Flex, Text } from '@chakra-ui/react';
+import { Button, Flex, Text } from '@chakra-ui/react';
 
 import LoadingIndicator from '../../components/LoadingIndicator';
 import Wrapper from '../../components/Wrapper';
